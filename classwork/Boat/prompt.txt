@@ -1,0 +1,14 @@
+Exercise
+
+
+Create two threads that represent two types of boats (retrieve or
+add items).
+
+
+Create a static variable in one of the thread that represents an
+inventory in / from which boat add / retrieve items.
+
+
+Write a main class containing the method main and create multiple
+boats with different types and let them use the static variable (that
+represents the inventory).

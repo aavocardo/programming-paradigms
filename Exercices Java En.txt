@@ -1,0 +1,42 @@
+﻿Java Basics
+Exercise 1
+1. Create a Policeman class . The class has three fields that are inaccessible from the outside: name , first name and salary .
+2. Write two constructors, which take as argument:
+* the last name , first name and salary , and who performs the initialization of the Policeman fields .
+* The name and salary , and which initializes the default first name. This constructor calls the first constructor.
+3. Write two methods setName () and getName () , which respectively serves to assign a name (pass as argument) and return this name for a Policeman.
+4. first name and salary fields .
+5. Write a method increaseSalary ( int amount) , which increases the salary of the Policeman by the amount passed in argument.
+6. Write another class, including a main () method ,
+* Create three objects p1, p2 and p3 of class Policeman . p1 and p2 will have the same surname, first name and salary, different from the third p3.
+* In this class create a method displays (Police p) , which takes a Policeman object as argument and displays on the screen the different fields of the Policeman .
+* Show how this method works on p3. Increase his salary and check by displaying it again that he has indeed increased.
+7. Write a toString () method in this class, which returns a character string that composes the concatenation of the policeman's first name and last name.
+* Calling the System .out.println (p1) method in main ().
+
+Exercise 2
+1. Create a Team class , able to hold several Policemen. This class contains:
+* An array field to store these Fonts. This field can be initialized when building a team.
+* Three methods: addPolice () , removePolice () and isPolicePresent () , which allow respectively to add a Policeman passed as a parameter, to remove a Policeman passed as a parameter, and to test if a Policeman is present in the team. If the Policeman has indeed been removed, the removePolice() method returns true , otherwise it returns false . (maximum array size is 50).
+* A toString() method, this method will call the methods already written in the Policeman class .
+2. Add the necessary code to the main() method to create a team of a few Policemen. Show on an example how the methods of the Team class work .
+3. Create a method addAllEquipe () , to which we can pass a team as a parameter, and which copies the content of this team into the current team. We will rely on existing methods.
+4. Create a clear() method that clears the contents of the team. The table will be returned to its initial capacity.
+5. Create a getNumberPolice() method that returns the number of Policemen in the team.
+6. Create a method getAverageSalary () that returns the average salary of the Police officers in the team.
+7. We want to manage overflows in the team class. If the team is full, we want to be able to extend the size of the team table, without of course losing data. which array copy method will we rely on? Write an extendTeam() method that increases the size of the array containing the Policemen by 50.
+8. Write a reduceTeam() method that reduces the size of the array containing the Policemen by 50. This method will return true if the operation is possible, false if it is not. such an operation will only be possible if the number of Policemen remaining in the array is smaller than the final size of the array.
+9. Add the necessary code to the main() method to create a team of a few Policemen, and test the display of the team. Test the functioning of the adaptation of the size of the table to the number of Policemen to be registered there.
+
+Exercise 3
+1. Create a Captain class . A captain is a Policeman, which has a captain boolean field . We want to have a setter and a getter for this field, so that we can read and modify it.
+   * What is the natural link between the Policeman class and the Captain class?
+   * What must be added to the Captain class for a Policeman to be a captain?
+   * Should the equals() method of the Policeman class be overridden?
+   * Same question for toString() method?
+2. Is it possible to place a captain in a team, without modifying the Team class ? what happens if we try to display a team, while a captain has been registered in this team.
+3. Create a TeamMatch class . It is a team to play a match and which has a captain, an instance of the Captain class . We will add the necessary methods to this class to add or delete this captain.
+   * To display a team for a match on the console in the same way as displaying a normal team. How do I modify EquipeMatch to do this?
+4. We want to define an equals() method for the Team class . Two teams will be equal if they have the same Policemen (not necessary in the same order).
+   * Program the equals() method , and write a test case in a main() method . We will take a case showing two different teams, and another with two equal teams.
+   * Override the hashCode() method and program it.
