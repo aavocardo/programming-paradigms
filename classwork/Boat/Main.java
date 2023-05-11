@@ -4,8 +4,8 @@ import java.util.Vector;
 import java.util.Collections;
 
 public class Main {
-    // Cigarette increments INVENTORY variable
-    // Catamaran decrements INVENTORY variable
+    // Cigarette increments <int> INVENTORY variable
+    // Catamaran decrements <int> INVENTORY variable
     public static void main(String[] args) {
         Vector<Thread> threads = new Vector<>();
 
